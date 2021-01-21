@@ -1,0 +1,130 @@
+@media (max-width:1400px) {
+    .container {
+        max-width: 1050px;
+        padding: 0 30px 80px 30px;
+    }
+    .portfolio {
+        &__list {
+            justify-content: space-around;
+        }
+        &__item {
+            max-width: 300px;
+            min-height: 330px;
+            margin-right: 0;
+            &:hover {
+                &::before {
+                    top: 65px;
+                    right: 33%;
+                }
+            }
+        }
+        &__text {
+            padding-right: 50px;
+        }
+        &__bg {
+            height: 220px;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        max-width: 770px;
+        padding: 115px 25px;
+        &_margin-padding {
+            margin-top: 0;
+        }
+    }
+
+    .portfolio {
+        &__list {
+            justify-content: space-between;
+        }
+        &__item {
+            flex: 1 1 60%;
+            margin-right: 0;
+            margin-bottom: 30px;
+            max-width: 360px;
+            &:hover {
+                &::before {
+                    top: 65px;
+                    right: 35%;
+                }
+            }
+        }
+        &__item:nth-child(1),
+        &__item:nth-child(2),
+        &__item:nth-child(4),
+        &__item:nth-child(5) {
+            margin-right: 0px;
+        }
+        &__item:nth-child(5),
+        &__item:nth-child(6) {
+            margin-bottom: 0px;
+        }
+        &__bg {
+            background-size: cover;;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .container {
+        max-width: 730px;
+        padding: 82px 25px;
+    }
+
+    .portfolio {
+        &__list {
+            justify-content: space-around;
+        }
+        &__item {
+            max-width: 280px;
+            &:hover {
+                &::before {
+                    top: 65px;
+                    right: 30%;
+                }
+            }
+        }
+        &__text {
+            padding-right: 30px;
+        }
+    }
+}
+
+@media (max-width:649px) {
+    .container {
+        max-width: 445px;
+        padding: 65px 20px;
+    }
+    .title {
+        font-size: 28px;
+        &::after {
+            height: 1.5px;
+            width: 36px;
+        }
+    }
+
+    .portfolio {
+        &__list {
+            margin: 0;
+        }
+        &__item {
+            min-height: 315px;
+            font-size: 14px;
+            &:hover {
+                &::before {
+                    top: 65px;
+                    right: 32%;
+                }
+            }
+            &:nth-child(5) {
+                margin-bottom: 30px;
+            }
+            
+            
+        }
+
+    }
+}

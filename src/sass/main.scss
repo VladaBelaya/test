@@ -12,6 +12,7 @@ ul {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 10px;
     &_margin-padding {
         margin-top: 129px;
         padding-bottom: 129px;
@@ -39,5 +40,5 @@ ul {
  
 @import "fonts";  
 @import "portfolio";  
-
+@import "media"
   
