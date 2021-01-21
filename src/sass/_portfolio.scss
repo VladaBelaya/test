@@ -1,8 +1,7 @@
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    &__item {
-        
+    &__item { 
         min-height: 370px;
         max-width: 370px;
         border-radius: 2px;
@@ -11,10 +10,12 @@
         line-height: 28px;
         font-weight: 700;
         color: #454750;
-        background-image: url('../img/img1.jpg');
-        // background-size: 100% 273px;
-        background: #FEFEFE;
+        background: url('../img/img1.jpg') center top no-repeat #FEFEFE;
+        background-size: 100% 273px ;
+        // background-size: 250px 250px;
+        // background: #FEFEFE;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
         transition: 0.3s all;
         
         &:hover {
@@ -56,11 +57,21 @@
     &__bg6 {
         background-image: url('../img/img6.jpg');
     }
-    &__bg-loupe {
-        background-image: url('../img/icon.png');
-        background-repeat: no-repeat;
-        background-size: 100px;
-        z-index: 2;
+    // &__bg-loupe {
+    //     background-image: url('../img/icon.png');
+    //     background-repeat: no-repeat;
+    //     background-size: 100px;
+    //     z-index: 2;
+    // }
+
+    &__img {
+        display: block;
+        opacity: 0;
+        margin: 106px auto 67px auto;
+        transition: 0.3s all;
+        &:hover {
+            opacity: 1;
+        }
     }
     
     &__text {
